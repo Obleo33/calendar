@@ -6,7 +6,7 @@ class Calendar extends Component {
   constructor(){
     super();
     this.state = {
-      events: [ {title: 'test', start: '06:00', end: '07:00'}],
+      events: [ {title: 'test', start: '10:00', end: '11:00'}],
     }
   }
 

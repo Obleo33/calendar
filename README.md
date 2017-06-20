@@ -1,1 +1,5 @@
-# This is a readme file
+# Calendar Challenge
+
+* git clone
+* npm install
+* npm start
