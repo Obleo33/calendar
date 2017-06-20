@@ -1,4 +1,5 @@
 import React from 'react'
+import Events from './Events'
 
 const CalanderRows = ({ events }) => {
   let rows = []
@@ -12,20 +13,13 @@ const CalanderRows = ({ events }) => {
     <tbody>
       {rows.map(time => {
         return (
-          <tr id={`row-${time}`} key={`row-${time}`}>
-            <th className="calendar-row">{time}</th>
-            { test() }
+          <tr id={`row-${ time }`} key={`row-${ time }`}>
+            <th className="calendar-row">{ time } </th>
+            <Events events={ events } time={ time }/>
           </tr>
         )
       })}
     </tbody>
-  )
-}
-
-
-const test = () => {
-  return(
-    <td>what</td>
   )
 }
 
