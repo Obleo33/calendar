@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.calendar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#calendar-table {
+  margin: 20px;
+  width: 80%;
+  border: 1px solid black;
+  text-align: left;
+}
+
+#calendar-table th {
+  margin: 0;
+  border: 1px solid lightgrey;
+}
