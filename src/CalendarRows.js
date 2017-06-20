@@ -1,10 +1,10 @@
 import React from 'react'
 
-const CalanderRows = () => {
+const CalanderRows = ({ events }) => {
   let rows = []
 
   for (let i = 5; i < 20; i ++ ) {
-    rows.push(`${i}`);
+    rows.push(`${i}:00`);
     rows.push(`${i}:30`)
   }
 
@@ -14,6 +14,7 @@ const CalanderRows = () => {
         return (
           <tr id={`row-${time}`} key={`row-${time}`}>
             <th className="calendar-row">{time}</th>
+            { test() }
           </tr>
         )
       })}
@@ -21,5 +22,11 @@ const CalanderRows = () => {
   )
 }
 
+
+const test = () => {
+  return(
+    <td>what</td>
+  )
+}
 
 export default CalanderRows

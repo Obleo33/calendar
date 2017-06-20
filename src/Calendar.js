@@ -6,7 +6,7 @@ class Calendar extends Component {
   constructor(){
     super();
     this.state = {
-      events: [],
+      events: [ {title: 'test', start: '06:00', end: '07:00'}],
     }
   }
 
@@ -19,7 +19,7 @@ class Calendar extends Component {
       <div className="calendar-container">
         <EventForm submitEvent={ (event) => this.submitEvent(event) }/>
         <table id="calendar-table">
-          <CalanderRows />
+          <CalanderRows events={ this.state.events }/>
         </table>
       </div>
     );
