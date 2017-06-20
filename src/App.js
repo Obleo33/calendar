@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import EventForm from './EventForm'
+import Calendar from './Calendar'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>main Page</h1>
-        <EventForm />
+        <h1>Calendar Challenge</h1>
+        <Calendar />
       </div>
     );
   }
